@@ -5,8 +5,8 @@ var AWS = require('aws-sdk');
 let awsConfig = {
   region: 'sa-east-1',
   endpoint: 'dynamodb.sa-east-1.amazonaws.com',
-  accessKeyId,
-  secretAccessKey,
+  accessKeyId: 'AKIA47HDITLFPJ63RFLQ',
+  secretAccessKey: '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',
 };
 AWS.config.update(awsConfig);
 
@@ -14,9 +14,9 @@ let docClient = new AWS.DynamoDB.DocumentClient();
 
 let save = function () {
   var input = {
-    email: 'example-1@gmail.com',
-    telephone: '3374-9800',
-    fullName: 'Roberto Dias',
+    email: 'umemailqualquer@gmail.com',
+    telephone: '3374-9999',
+    fullName: 'chimbinha da alegria',
     created_on: new Date().toString(),
     clientType: 'prospect',
     // caso acesso usuário
